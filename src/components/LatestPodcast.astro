@@ -1,0 +1,22 @@
+---
+import { fetchAndParseRSS } from '../../fetchPodcast';
+
+const rssUrl = `https://feeds.transistor.fm/multithreaded-income-podcast`;
+
+const podcastData = await fetchAndParseRSS(rssUrl);
+
+const latest = podcastData.rss.channel.item[0];
+---
+
+<div>
+   <h4 class="text-2xl text-center">{ latest.title }</h4>
+   <div class="podcast-description" set:html={latest.description}></div>
+</>
+
+<style>
+    .podcast-description p {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        color: #4b5563;
+    }
+</style>
