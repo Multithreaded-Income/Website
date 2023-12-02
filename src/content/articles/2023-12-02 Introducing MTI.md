@@ -12,4 +12,5 @@ tags:
 
 Hey everyone!  Welcome to Multithreaded Income!  
 
-MTI (Multithreaded Income) is a site about using your technical skills, whatever they might be, to build a better financial foundation for yourself and your family.
+MTI (Multithreaded Income) is a site about using your technical skills, whatever they might be, to build a better financial foundation for yourself and your family.  
+
