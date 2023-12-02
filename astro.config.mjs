@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
-
 import tailwind from "@astrojs/tailwind";
+
+import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
@@ -8,5 +9,5 @@ export default defineConfig({
     "discord": "https://discord.gg/sJhrJcVAzk",
     "podcast": "https://podcast.multithreadedincome.com"
   },
-  integrations: [tailwind()]
+  integrations: [tailwind(), sitemap()]
 });
