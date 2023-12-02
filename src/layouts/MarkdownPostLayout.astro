@@ -1,4 +1,7 @@
 ---
+import { Image } from "astro:assets";
+import MTILogo from "../assets/MTI Logo Full.png";
+
 interface Props {
   title: string;
 }
@@ -18,9 +21,25 @@ const { title } = Astro.props;
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="generator" content={Astro.generator} />
     <title>{title} | Multithreaded Income</title>
+
+    <!-- tags -->
+    <meta property="og:title" content={title} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+
+    <!-- styles -->
   </head>
   <body>
-    <slot />
+    <header class="container mx-auto my-5">
+      <a href="/">
+        <Image
+          src={MTILogo}
+          class="w-1/2 mx-auto"
+          alt="Multithreaded Income Logo"
+        />
+      </a>
+    </header>
+    <div class="markdownArticle container w-1/2 mx-auto"><slot /></div>
   </body>
 </html>
 <style is:global>

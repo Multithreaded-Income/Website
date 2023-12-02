@@ -2,21 +2,22 @@
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 
-const { entry } = Astro.props;
 const articles = await getCollection("articles");
-
-console.log(articles);
 ---
 
-<Layout>
-  <h2>Articles</h2>
-  <ul>
-    {
-      articles.map((article) => (
-        <li>
-          <a href={`/articles/${article.slug}`}>{article.data.title}</a>
-        </li>
-      ))
-    }
-  </ul>
+<Layout title="Articles">
+  <main class="container mx-auto text-center mt-5">
+    <h2 class="text-2xl mb-5">Articles</h2>
+    <ul>
+      {
+        articles.map((article) => (
+          <li>
+            <a href={`/articles/${article.slug}`}>{article.data.title}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </main>
 </Layout>
+
+<style></style>

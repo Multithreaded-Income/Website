@@ -1,33 +1,40 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
-import LatestPodcast from "../components/LatestPodcast.astro";
 
 import MTILogo from "../assets/MTI Logo Full.png";
 ---
 
 <Layout title="Welcome">
-  <header class="container mx-auto mt-5">
-    <Image
-      src={MTILogo}
-      class="w-1/2 mx-auto"
-      alt="Multithreaded Income Logo"
-    />
-  </header>
-<main class="container mx-auto mt-5 flex-auto w-full">
-	<div class="flex flex-wrap">
-		<div class="w-full md:w-1/2">
-			<p class="text-center">
-				<span class="font-bold">Multithreaded Income</span> is your insurance policy against the turbulant
-				world of tech.
-			</p>
-		</div>
-		<div class="w-full md:w-1/2">
-			<LatestPodcast />
-			<!-- <LatestArticle /> -->
-		</div>
-	</div>
-</main>
+  <main class="container mx-auto flex justify-center items-center mt-5">
+    <!-- Button to Articles -->
+    <div class="m-2">
+      <a
+        href="/articles"
+        class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300"
+        >Articles</a
+      >
+    </div>
+
+    <!-- Button to Podcast -->
+    <div class="m-2">
+      <a
+        href="https://podcast.multithreadedincome.com"
+        class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300"
+		target="_blank"
+        >Podcast</a
+      >
+    </div>
+
+    <!-- Button to YouTube -->
+    <div class="m-2">
+      <a
+        href="https://youtube.com/@MultithreadedIncome"
+        class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300"
+		target="_blank"
+        >YouTube</a
+      >
+    </div>
   </main>
 </Layout>
 
