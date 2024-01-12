@@ -1,0 +1,72 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Join Our Discord">
+  <header class="container mx-auto flex justify-center items-center mt-5">
+    <!-- Button to Articles -->
+    <div class="m-2">
+      <a
+        href="/articles"
+        class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300"
+        >Articles</a
+      >
+    </div>
+
+    <!-- Button to Podcast -->
+    <div class="m-2">
+      <a
+        href="https://podcast.multithreadedincome.com"
+        class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300"
+        target="_blank">Podcast</a
+      >
+    </div>
+
+    <!-- Button to YouTube -->
+    <div class="m-2">
+      <a
+        href="https://youtube.com/@MultithreadedIncome"
+        class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300"
+        target="_blank">YouTube</a
+      >
+    </div>
+
+    <!-- Button to Discord -->
+    <div class="m-2">
+      <a
+        href="https://discord.gg/sJhrJcVAzk"
+        class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300"
+        target="_blank">Discord</a
+      >
+    </div>
+  </header>
+  <main class="container mx-auto flex justify-center items-center mt-5">
+    <div class="w-1/2">
+      <p>
+        Hey there! We'd love to have you in the Multithreaded Discord community!
+        Before you join, we just want to let you know that we have a few rules
+        to keep the community safe and friendly for everyone. Please read the
+        rules below and click the button at the bottom to join the community.
+      </p>
+
+      <!-- email address text box -->
+      <div class="mt-5">
+        <label for="email" class="block text-sm font-medium text-gray-700">
+          Email Address
+        </label>
+        <div class="mt-1">
+          <input
+            type="text"
+            name="email"
+            id="email"
+            class="shadow-sm focus:ring-green-500 focus:border-green-500 block w-full sm:text-sm border-gray-300 rounded-md"
+            placeholder=""
+          />
+          
+        </div>
+      </div>
+
+      <style></style>
+    </div>
+  </main>
+</Layout>
