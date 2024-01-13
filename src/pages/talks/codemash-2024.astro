@@ -1,0 +1,151 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Welcome">
+  <header class="container mx-auto flex justify-center items-center mt-5">
+    <!-- Button to Articles -->
+    <div class="m-2">
+      <a
+        href="/articles"
+        class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300"
+        >Articles</a
+      >
+    </div>
+
+    <!-- Button to Podcast -->
+    <div class="m-2">
+      <a
+        href="https://podcast.multithreadedincome.com"
+        class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300"
+        target="_blank">Podcast</a
+      >
+    </div>
+
+    <!-- Button to YouTube -->
+    <div class="m-2">
+      <a
+        href="https://youtube.com/@MultithreadedIncome"
+        class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300"
+        target="_blank">YouTube</a
+      >
+    </div>
+
+    <!-- Button to Discord -->
+    <div class="m-2">
+      <a
+        href="https://discord.gg/sJhrJcVAzk"
+        class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300"
+        target="_blank">Discord</a
+      >
+    </div>
+  </header>
+
+  <main class="container mx-auto w-1/2 mt-5">
+    <p>
+      Thanks for attending Kevin's talk at CodeMash 2024. Please take a moment
+      to join our <a class="text-blue-500 hover:text-blue-700" href="">Discord</a>.
+    </p>
+
+    <p>
+      Here is a link to the slides for the talk: <a
+        class="text-blue-500 hover:text-blue-700 mt-5"
+        href="https://www.dropbox.com/scl/fi/i9tbuas7k0xg3qzflexls/Multithreaded-Income-How-Developers-Can-Achieve-Parallel-Success-v1.pptx?rlkey=2zspw9uug6kt2tth7qn76vwf3&dl=0"
+        >PowerPoint</a
+      >
+    </p>
+    <br />  
+    <p class="text-center">Video coming soon!</p>
+    <div class="w-1/2 mx-auto mt-5">
+      <form
+        action="https://track.bentonow.com/forms/ba0d0b8f1c7fbe56a65d6ad6bb91e6c4/$subscribe?hardened=true"
+        method="POST"
+        enctype="multipart/form-data"
+        class="bento-formkit"
+      >
+        <div class="bento-formkit-headline">Get Notified!</div>
+        <div class="bento-formkit-subheader">
+          Join our mailing list to know when new episodes drop, and also know
+          when new challenges or coaching opportunities open up.
+        </div>
+        <input
+          type="hidden"
+          name="redirect"
+          value="https://podcast.multithreadedincome.com"
+        />
+        <input
+          type="text"
+          name="fields_last_name"
+          class="bento-formkit-input"
+          placeholder="First Name"
+        />
+        <input
+          type="text"
+          name="fields_first_name"
+          class="bento-formkit-input"
+          placeholder="Last Name"
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Email Address"
+          class="bento-formkit-input"
+        />
+        <button type="submit" class="bento-formkit-button">Subscribe</button>
+      </form>
+    </div>
+    <style>
+      .bento-formkit {
+        width: 100%;
+        line-height: 1.5em;
+        max-width: 400px;
+        box-sizing: border-box;
+        padding: 20px;
+        border-radius: 8px;
+        background: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+        font-family: gs-inter-2020-11, "Helvetica Neue", Helvetica, Arial,
+          sans-serif;
+        position: relative;
+      }
+      .bento-formkit-headline {
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+      }
+      .bento-formkit-subheader {
+        font-size: 16px;
+        color: #666;
+      }
+      .bento-formkit input {
+        display: block;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        color: #333;
+        cursor: text;
+        margin: 8px 0 12px;
+        padding: 9px 10px;
+        box-sizing: border-box;
+      }
+      .bento-formkit button {
+        text-align: center;
+        background-color: #0095ff;
+        font-weight: 800;
+        color: white;
+        padding: 12px 20px;
+        margin: 0px 0 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        border-radius: 8px;
+        box-sizing: border-box;
+        box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </main>
+
+  <style></style>
+</Layout>
