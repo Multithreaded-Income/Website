@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import MTILogo from "../assets/MTI Logo Full.png";
+import Bento from "../components/bento.astro";
 
 interface Props {
   title: string;
@@ -41,10 +42,7 @@ const { title } = Astro.props;
     </header>
     <div class="markdownArticle container w-1/2 mx-auto"><slot /></div>
   </body>
-  <script
-    src="https://app.bentonow.com/ba0d0b8f1c7fbe56a65d6ad6bb91e6c4.js"
-    defer
-    async></script>
+  <Bento />
 </html>
 <style is:global>
   :root {
