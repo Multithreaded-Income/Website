@@ -16,6 +16,7 @@
     "@astrojs/check": "^0.4.0",
     "@astrojs/sitemap": "^3.0.3",
     "@astrojs/tailwind": "^5.0.2",
+    "@bentonow/bento-node-sdk": "^0.2.0",
     "@types/xml2js": "^0.4.14",
     "astro": "^4.0.0",
     "axios": "^1.6.2",
